@@ -1,0 +1,58 @@
+{
+  "name": "gatsby-starter-blog",
+  "private": true,
+  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "dependencies": {
+    "@octokit/rest": "^16.20.0",
+    "gatsby": "^2.2.9",
+    "gatsby-cli": "^2.5.3",
+    "gatsby-image": "^2.0.34",
+    "gatsby-plugin-google-analytics": "^2.0.17",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.10",
+    "gatsby-plugin-sharp": "^2.0.30",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-remark-copy-linked-files": "^2.0.11",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-remark-smartypants": "^2.0.9",
+    "gatsby-source-filesystem": "^2.0.27",
+    "gatsby-source-s3-image": "github:jessestuart/gatsby-source-s3-image#jesse/gatsby_2_upgrade",
+    "gatsby-transformer-remark": "^2.3.5",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "netlify-lambda": "^1.4.3",
+    "prettier": "^1.16.4",
+    "querystring": "^0.2.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.2.0",
+    "url-metadata": "^2.4.0"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+  },
+  "scripts": {
+    "netlify": "npm run build && npm run lambda",
+    "build": "gatsby build",
+    "lambda": "netlify-lambda build static/functions",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "l": "netlify-lambda serve ."
+  }
+}
